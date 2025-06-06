@@ -8,6 +8,11 @@
 
 It leverages **(incremental) source code generators** to consolidate design intent, eliminate boilerplate, and unify model logic within a single codebase.
 
+
+## Intend
+
+The intention behind this design is to quickly create crud applications with a central library for the models. There shouldn't be a need to define default mappings or castings between these models as the code generator should create default ones, reducing boilplate code. While still providing enough customization for more advanced use.
+
 ---
 
 ## Core Principles
