@@ -1,5 +1,4 @@
 # Interface-First Model Generation (IFMG)
-**Version 1.1**
 
 ---
 
@@ -7,7 +6,7 @@
 
 **Interface-First Model Generation (IFMG)** is a pragmatic software design approach centered around defining data and behavior contracts via interfaces. From these, multiple related model artifacts are automatically generated — including DTOs, business objects, creation/update models, and persistent entities.
 
-It leverages **incremental source code generators** to consolidate design intent, eliminate boilerplate, and unify model logic within a single codebase.
+It leverages **(incremental) source code generators** to consolidate design intent, eliminate boilerplate, and unify model logic within a single codebase.
 
 ---
 
@@ -20,7 +19,7 @@ All models originate from structured interfaces defining shape and behavior. Int
 Source generators produce all model types (immutable, mutable, DTOs, entities) from one interface.
 
 ### 3. Flexible Property Inclusion/Exclusion
-Custom attributes like `IncludeOnly` and `ExcludeFrom` allow precise property control across model variants.
+Custom attributes like `[IncludeOnly]` and `[ExcludeFrom]` allow precise property control across model variants.
 
 ### 4. Support for Immutable and Mutable Models
 Use split interfaces to define immutable (read) and mutable (write) models using native C# constructs.
@@ -33,7 +32,7 @@ Safe, attribute-driven, implicit or explicit operator-based mapping between mode
 
 ---
 
-## Version 1.1 – Smart Intra-Library Mapping
+## Smart Intra-Library Mapping
 
 ### Key Enhancement
 Automatic mapping logic is generated **within the same project or assembly only**:
